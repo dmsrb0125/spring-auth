@@ -40,7 +40,7 @@ public class UserController {
         try {
             userService.login(requestDto, res);
         } catch (Exception e) {
-            return "redirect:/api/user/login-page?error"; // 로그인페이지로 돌아와서에러메세지 표현
+            return "redirect:/api/user/login-page?error"; // 로그인페이지로 돌아와서 에러메세지 표현
         }
 
         return "redirect:/";
